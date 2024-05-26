@@ -168,14 +168,14 @@ class _HomeState extends State<Home> {
                           'Tempo',
                           style: TextStyle(
                             color: Colors.white.withOpacity(0.5),
-                            fontSize: 20),
+                            fontSize: 16),
                         ),
                          Text(
                           widget.weatherModel[StaticFile.myLocationIndex]
                            .weeklyWeather![0]!.mainTemp
                            .toString(),
                           style: TextStyle(
-                            color: Colors.white, fontSize: 20),
+                            color: Colors.white, fontSize: 14),
                         ),
                       ],
                     )),
@@ -187,14 +187,14 @@ class _HomeState extends State<Home> {
                           'Vento',
                           style: TextStyle(
                             color: Colors.white.withOpacity(0.5),
-                            fontSize: 20),
+                            fontSize: 16),
                         ),
                          Text(
                           widget.weatherModel[StaticFile.myLocationIndex]
                            .weeklyWeather![0]!.mainWind
                            .toString(),
                           style: TextStyle(
-                            color: Colors.white, fontSize: 20),
+                            color: Colors.white, fontSize: 14),
                         ),
                       ],
                     )),
@@ -206,14 +206,14 @@ class _HomeState extends State<Home> {
                           'Humidade',
                           style: TextStyle(
                             color: Colors.white.withOpacity(0.5),
-                            fontSize: 20),
+                            fontSize: 16),
                         ),
                          Text(
                           widget.weatherModel[StaticFile.myLocationIndex]
                            .weeklyWeather![0]!.mainHumidity
                            .toString(),
                           style: TextStyle(
-                            color: Colors.white, fontSize: 20),
+                            color: Colors.white, fontSize: 14),
                         ),
                       ],
                     )),
@@ -221,7 +221,7 @@ class _HomeState extends State<Home> {
               )
             ),
             SizedBox(
-              height: myHeight * 0.04,
+              height: myHeight * 0.01,
             ),
             Padding(
              padding: EdgeInsets.symmetric(
@@ -232,11 +232,11 @@ class _HomeState extends State<Home> {
               children: [
                 Text(
                   'Hoje',
-                  style: TextStyle(color: Colors.white, fontSize: 25),
+                  style: TextStyle(color: Colors.white, fontSize: 14),
                 ),
                  Text(
                   'Historico',
-                  style: TextStyle(color: Colors.blue, fontSize: 16),
+                  style: TextStyle(color: Colors.blue, fontSize: 14),
                 ),
               ],
             )
@@ -246,18 +246,18 @@ class _HomeState extends State<Home> {
           ),
           Expanded(
            child: Padding(
-           padding: EdgeInsets.only(left: myWidth * 0.3, bottom: myHeight * 0.03),
+           padding: EdgeInsets.only(left: myWidth * 0.1, bottom: myHeight * 0.01),
            child: ScrollablePositionedList.builder(
            itemScrollController: itemScrollController,
            itemPositionsListener: itemPositionsListener,
             shrinkWrap: true,
             scrollDirection: Axis.horizontal,
-            itemCount: widget.weatherModel[StaticFile.myLocationIndex].weeklyWeather[0]!.allTime!.hour!.length,
+            itemCount: widget.weatherModel[StaticFile.myLocationIndex].weeklyWeather![0]!.allTime!.hour!.length,
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                width: myWidth * 0.35,
+                width: myWidth * 0.28,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: hour_index == index
@@ -280,7 +280,7 @@ class _HomeState extends State<Home> {
                      height: myHeight * 0.04,
                   ),
                   SizedBox(
-                    width: myWidth * 0.04,
+                    width: myWidth * 0.02,
                   ),
                   Column(
                    mainAxisAlignment: MainAxisAlignment.center,
@@ -294,7 +294,7 @@ class _HomeState extends State<Home> {
                      .hour![index]
                      .toString(),
                      style: TextStyle(
-                      fontSize: 20, color: Colors.white),
+                      fontSize: 10, color: Colors.white),
                      ),
                     Text(
                      widget

@@ -1,4 +1,4 @@
 class StaticFile {
-  static String myLocation = '';
+  static String myLocation = 'Washington, DC';
   static int myLocationIndex = 0;
 }

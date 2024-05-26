@@ -24,7 +24,7 @@ class _NavBarState extends State<NavBar> {
   pages = [
     Home(weatherModel: widget.weatherModel),
     Search(),
-    Forecast(),
+    Forecast(weatherModel: widget.weatherModel),
     Setting(),
   ];
   super.initState();

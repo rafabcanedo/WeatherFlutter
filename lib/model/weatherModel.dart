@@ -1,11 +1,11 @@
 class WeatherModel {
-    String name;
-    List<WeeklyWeather> weeklyWeather;
-
     WeatherModel({
         required this.name,
         required this.weeklyWeather,
     });
+
+    String? name;
+    List<WeeklyWeather?>? weeklyWeather;
 
     factory WeatherModel.fromJson(Map<String, dynamic> json) => WeatherModel(
         name: json["name"],
