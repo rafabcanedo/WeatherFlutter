@@ -40,7 +40,7 @@ class _NavBarState extends State<NavBar> {
       backgroundColor: Color(0xff060720),
       body: pages.elementAt(_currentIndex),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xff060720),
+        backgroundColor: Color.fromARGB(255, 157, 157, 201),
         currentIndex: _currentIndex,
         showSelectedLabels: false,
         showUnselectedLabels: false,
@@ -52,22 +52,22 @@ class _NavBarState extends State<NavBar> {
         },
         items: [
           BottomNavigationBarItem(
-          icon: Image.asset('assets/icons/1.2.png', height: myHeight*0.03,color: Colors.grey.withOpacity(0.5),),
+          icon: Image.asset('assets/icons/1.2.png', height: myHeight*0.03,color: Color.fromARGB(255, 145, 123, 123)),
           label: '',
           activeIcon: Image.asset('assets/icons/1.1.png', height: myHeight*0.03,color: Colors.white),
           ),
           BottomNavigationBarItem(
-          icon: Image.asset('assets/icons/2.2.png', height: myHeight*0.03,color: Colors.grey.withOpacity(0.5),),
+          icon: Image.asset('assets/icons/2.2.png', height: myHeight*0.03,color: Color.fromARGB(255, 145, 123, 123)),
           label: '',
           activeIcon: Image.asset('assets/icons/2.1.png', height: myHeight*0.03,color: Colors.white),
           ),
           BottomNavigationBarItem(
-          icon: Image.asset('assets/icons/3.2.png', height: myHeight*0.03,color: Colors.grey.withOpacity(0.5),),
+          icon: Image.asset('assets/icons/3.2.png', height: myHeight*0.03,color: Color.fromARGB(255, 145, 123, 123)),
           label: '',
           activeIcon: Image.asset('assets/icons/3.1.png', height: myHeight*0.03,color: Colors.white),
           ),
           BottomNavigationBarItem(
-          icon: Image.asset('assets/icons/4.2.png', height: myHeight*0.03,color: Colors.grey.withOpacity(0.5),),
+          icon: Image.asset('assets/icons/4.2.png', height: myHeight*0.03,color: Color.fromARGB(255, 145, 123, 123)),
           label: '',
           activeIcon: Image.asset('assets/icons/4.1.png', height: myHeight*0.03,color: Colors.white),
           ),

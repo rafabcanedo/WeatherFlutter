@@ -1,6 +1,6 @@
 [
     {
-        "name": "Paris",
+        "name": "Madrid",
         "weekly_weather": [
             {
                 "main_temp": "9°C",
@@ -166,7 +166,7 @@
         ]
     },
     {
-        "name": "London",
+        "name": "Roma",
         "weekly_weather": [
             {
                 "main_temp": "10°C",
@@ -332,7 +332,7 @@
         ]
     },
     {
-        "name": "Milan",
+        "name": "Milano",
         "weekly_weather": [
             {
                 "main_temp": "10°C",
@@ -498,7 +498,7 @@
         ]
     },
     {
-        "name": "Reykjavík",
+        "name": "Duartina",
         "weekly_weather": [
             {
                 "main_temp": "-3°C",
@@ -630,7 +630,7 @@
                 "all_time": {}
             },
             {
-                "main_temp": "-8°C",
+                "main_temp": "14°C",
                 "main_wind": "17 km/h",
                 "main_humidity": "14%",
                 "main_img": "assets/img/4.png",
@@ -664,7 +664,7 @@
         ]
     },
     {
-        "name": "Washington, DC",
+        "name": "Miami",
         "weekly_weather": [
             {
                 "main_temp": "4°C",
@@ -830,7 +830,7 @@
         ]
     },
     {
-        "name": "Kurdistan",
+        "name": "Firenze",
         "weekly_weather": [
             {
                 "main_temp": "-3°C",

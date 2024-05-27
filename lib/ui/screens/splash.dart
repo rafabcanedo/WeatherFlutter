@@ -50,10 +50,20 @@ class _SplashState extends State<Splash> {
        body: Container(
         height: myHeight,
         width: myWidth,
-        child: Center(child: Text(
+        child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+           Text(
           'Weather',
-           style: TextStyle(color: Colors.white, fontSize: 50),
-           )),
+           style: TextStyle(color: Colors.white, fontSize: 40),
+           ),
+           Text(
+            'Development by Canedo',
+            style: TextStyle(color: Colors.white, fontSize: 18),
+           ),
+          ],
+           ),
       )
       )
     );

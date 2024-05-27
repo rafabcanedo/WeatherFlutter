@@ -84,7 +84,7 @@ class _ForecastState extends State<Forecast> {
     double myWidth = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xff060720),
+        backgroundColor: Color.fromARGB(255, 113, 113, 192),
         body: Container(
             height: myHeight,
             width: myWidth,
@@ -147,8 +147,8 @@ class _ForecastState extends State<Forecast> {
                                     : Colors.white.withOpacity(0.05),
                                 gradient: hour_index == index
                                     ? LinearGradient(colors: [
-                                        Color.fromARGB(255, 21, 85, 169),
-                                        Color.fromARGB(255, 44, 162, 246),
+                                        Color.fromARGB(255, 164, 141, 226),
+                                        Color.fromARGB(255, 154, 120, 216),
                                       ])
                                     : null),
                             child: Center(

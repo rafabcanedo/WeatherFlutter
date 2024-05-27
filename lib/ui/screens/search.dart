@@ -20,7 +20,7 @@ class _SearchState extends State<Search> {
 
   return SafeArea(
     child: Scaffold(
-      backgroundColor: Color(0xff060720),
+      backgroundColor: Color.fromARGB(255, 113, 113, 192),
       body: Container(
         height: myHeight,
         width: myWidth,
@@ -142,8 +142,8 @@ class _SearchState extends State<Search> {
                      widget.weatherModel[index].name
                      .toString()
                      ? LinearGradient(colors: [
-                      Color.fromARGB(255, 21, 85, 169),
-                      Color.fromARGB(255, 44, 162, 246),
+                      Color.fromARGB(255, 164, 141, 226),
+                     Color.fromARGB(255, 154, 120, 216),
                      ])
                      : null,
                      borderRadius: BorderRadius.circular(18)),

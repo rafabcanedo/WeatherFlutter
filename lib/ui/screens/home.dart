@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
 
   return SafeArea(
     child: Scaffold(
-      backgroundColor: Color(0xff060720),
+      backgroundColor: Color.fromARGB(255, 113, 113, 192),
       body: Container(
         height: myHeight,
         width: myWidth,
@@ -97,7 +97,7 @@ class _HomeState extends State<Home> {
               height: myHeight * 0.01,
             ),
             Text(
-              '24 May 2024'
+              '26 May 2024'
               .toString(),
               style: TextStyle(fontSize: 20, color: Colors.white.withOpacity(0.5)),
             ),
@@ -117,11 +117,7 @@ class _HomeState extends State<Home> {
                    child: Container(
                     decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    gradient: LinearGradient(
-                      colors: [
-                        Color.fromARGB(255, 21, 85, 169),
-                        Color.fromARGB(255, 44, 162, 246),
-                      ])),
+                    color: Color.fromARGB(255, 157, 157, 201)),
                       child: Center(
                        child: Text(
                         'Previsao',
@@ -236,7 +232,7 @@ class _HomeState extends State<Home> {
                 ),
                  Text(
                   'Historico',
-                  style: TextStyle(color: Colors.blue, fontSize: 14),
+                  style: TextStyle(color: Color.fromARGB(255, 157, 157, 201), fontSize: 14),
                 ),
               ],
             )
@@ -266,8 +262,8 @@ class _HomeState extends State<Home> {
                    gradient: 
                    hour_index == index ?
                    LinearGradient(colors: [
-                    Color.fromARGB(255, 21, 85, 169),
-                    Color.fromARGB(255, 44, 162, 246),
+                    Color.fromARGB(255, 164, 141, 226),
+                    Color.fromARGB(255, 154, 120, 216),
                    ])
                    : null),
                 child: Row(

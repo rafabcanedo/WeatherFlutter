@@ -15,11 +15,12 @@ class _SettingState extends State<Setting> {
 
   return SafeArea(
     child: Scaffold(
+      backgroundColor: Color.fromARGB(255, 113, 113, 192),
       body: Container(
         height: myHeight,
         width: myWidth,
-        child: Container(
-          child: Text('Setting Page'),
+        child: Center(
+          child: Text('Work in progress...', style: TextStyle(color: Colors.grey, fontSize: 25)),
         )
       )
     ),
